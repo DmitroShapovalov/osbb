@@ -1,5 +1,5 @@
 export const environment = {
-  production: false,
+  production: true,
   firebase: {
     "projectId": "osbb-42912",
     "appId": "1:666503050281:web:2bf8c108c5d44e3ef15838",
@@ -8,5 +8,6 @@ export const environment = {
     "apiKey": "AIzaSyCKMey-uQt5aSF3bLfEg_mIYYczmq59dOA",
     "authDomain": "osbb-42912.firebaseapp.com",
     "messagingSenderId": "666503050281"
-  }
+  },
+  useEmulators: false,
 };
