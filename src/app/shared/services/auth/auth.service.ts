@@ -6,10 +6,10 @@ import {
   signInWithEmailAndPassword,
   signOut,
 } from 'firebase/auth';
-import {AUTH} from "../../../app.config";
 import { authState } from 'rxfire/auth';
 import { Credentials } from '../../interfaces/credentials';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
+import {getAuth} from "@angular/fire/auth";
 
 export type AuthUser = User | null | undefined;
 
@@ -21,7 +21,7 @@ interface AuthState {
   providedIn: 'root',
 })
 export class AuthService {
-  private auth = inject(AUTH);
+  private auth = getAuth();
 
   // sources
   private user$ = authState(this.auth);
