@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "osbb-42912"
+  },
+  "targets": {
+    "osbb-42912": {
+      "hosting": {
+        "osbb": [
+          "osbb-42912"
+        ]
+      }
+    }
+  }
+}
