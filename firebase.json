@@ -4,7 +4,7 @@
   },
   "hosting": [
     {
-      "public": "public",
+      "public": "dist/osbb/browser",
       "ignore": [
         "firebase.json",
         "**/.*",
