@@ -7,7 +7,7 @@ export const routes: Routes = [
     loadChildren: () => import('./auth/auth.routes').then((m) => m.AUTH_ROUTES),
   },
   {
-    path: 'home',
+    path: 'dashboard',
     canActivate: [isAuthenticatedGuard()],
     loadComponent: () => import('./dashboard/dashboard.component').then(c => c.DashboardComponent),
   },

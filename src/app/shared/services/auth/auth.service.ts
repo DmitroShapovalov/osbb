@@ -9,7 +9,7 @@ import {
 import { authState } from 'rxfire/auth';
 import { Credentials } from '../../interfaces/credentials';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
-import {getAuth} from "@angular/fire/auth";
+import {Auth} from "@angular/fire/auth";
 
 export type AuthUser = User | null | undefined;
 
@@ -21,7 +21,7 @@ interface AuthState {
   providedIn: 'root',
 })
 export class AuthService {
-  private auth = getAuth();
+  private auth: Auth = inject(Auth);
 
   // sources
   private user$ = authState(this.auth);
