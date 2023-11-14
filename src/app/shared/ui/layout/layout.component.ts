@@ -13,5 +13,5 @@ import {SidebarComponent} from "../sidebar/sidebar.component";
   styleUrl: './layout.component.scss'
 })
 export class LayoutComponent {
-
+  isSidebarOpen = true;
 }

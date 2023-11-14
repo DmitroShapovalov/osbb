@@ -1,0 +1,13 @@
+.avatar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  background-color: black;
+  border-radius: 50%;
+
+  .abbreviation {
+    font-size: 24px;
+    color: white
+  }
+}
